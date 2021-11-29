@@ -1,244 +1,271 @@
-/* CSS Document */
+/*
+1. Global
+2. Header
+3. Main
+4. Main - Aside
+5. Main - Content
+6. Footer
+*/
 
+
+/* 1. Global */
 * {
-    padding: 0;
-    margin: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    color: #5F7A77;
-    font: 13px/19px Arial, Helvetica, sans-serif; /* font-size/line-height */
-    background-image: url(../img/main-bg.gif);
-    background-repeat: repeat-x;
-    background-color: #fff;
+  color: #5F7A77;
+  font: 13px/19px Arial, Helvetica, sans-serif; /* font-size/line-height */
+  background-image: url(../img/main-bg.gif);
+  background-repeat: repeat-x;
+  background-color: #fff;
 }
 
-ul {
-    list-style-type: none;
+ul { list-style-type: none; }
+a { text-decoration: none; }
+.justify { text-align: justify; }
+
+
+/* 2. Header */
+.header__top {
+  margin: 0 auto;
+  width: 778px;
+  height: 65px;
+
+  background-image: url(../img/topbg.jpg);
+  background-repeat: no-repeat;
+  color: #828282;
+
+  position: relative;
 }
 
-a {
-    text-decoration: none;
+.header__top img { /*картинка с логотипом Aquatic в заголовке*/
+  width: 136px;
+  height: 31px;
+
+  position: absolute; /*позиционируем*/
+  top: 12px;          /*от верха страницы*/
+  left: 235px;        /*от левого края страницы*/
 }
 
-.justify {
-    text-align: justify;
+.header__top p { /*параграф с текстом в загаловке*/
+  width: 200px;
+
+  color: #828282;
+
+  position: absolute; /*позиционируем*/
+  top: 43px;          /*от верха страницы*/
+  left: 235px;        /*от левого края страницы*/
 }
 
-/* Header */
+.header__nav {
+  margin: 0 auto;
+  padding: 11px 0 0 92px;
+  width: 686px;
+  height: 153px;
 
-.header_top {
-    width: 778px;
-    height: 65px;
-    background-image: url(../img/topbg.jpg);
-    background-repeat: no-repeat;
-    color: #828282;
-    position: relative;
-    margin: 0 auto;
+  background: url(../img/header.jpg) 0 0 no-repeat;
+
+  position: relative;
 }
 
-.header_top img { /*картинка с логотипом Aquatic в заголовке*/
-    width: 136px;
-    height: 31px;
-    position: absolute; /*позиционируем*/
-    top: 12px;          /*от верха страницы*/
-    left: 235px;        /*от левого края страницы*/
+.header__nav ul {
+  width: 87px;
 }
 
-.header_top p { /*параграф с текстом в загаловке*/
-    width: 200px;
-    color: #828282;
-    position: absolute; /*позиционируем*/
-    top: 43px;          /*от верха страницы*/
-    left: 235px;        /*от левого края страницы*/
+.header__nav ul li {
+  width: 87px;
+  height: 22px;
+
+  border-bottom: 1px dashed #AECCCA;
 }
 
-.header_nav {
-    width: 686px;
-    height: 153px;
-    background: url(../img/header.jpg) 0 0 no-repeat;
-    position: relative;
-    margin: 0 auto;
-    padding: 11px 0 0 92px;
+.header__nav ul li a {
+  display: block;
+  padding: 0 0 0 15px;
+  width: 72px;
+  height: 22px;
+
+  background: url(../img/bullet-normal.gif) 0 7px no-repeat #fff;
+  color: #305E5C;
+  line-height: 22px;
 }
 
-.header_nav ul {
-    width: 87px;
+.header__nav ul li a:hover {
+  padding: 0 0 0 15px;
+
+  background: url(../img/bullet-hover.gif) 0 7px no-repeat #fff;
+  color: #305E5C;
+  line-height: 22px;
 }
 
-.header_nav ul li {
-    width: 87px;
-    height: 22px;
-    border-bottom: 1px dashed #AECCCA;
+.header__nav ul li.border_none {
+  width: 87px;
+  height: 22px;
+
+  border-bottom: none;
 }
 
-.header_nav ul li a {
-    width: 72px;
-    height: 22px;
-    display: block;
-    background: url(../img/bullet-normal.gif) 0 7px no-repeat #fff;
-    color: #305E5C;
-    line-height: 22px;
-    padding: 0 0 0 15px;
-}
 
-.header_nav ul li a:hover {
-    background: url(../img/bullet-hover.gif) 0 7px no-repeat #fff;
-    color: #305E5C;
-    line-height: 22px;
-    padding: 0 0 0 15px;
-}
-
-.header_nav ul li.border_none {
-    width: 87px;
-    height: 22px;
-    border-bottom: none;
-}
-
-/* Main */
-
+/* 3. Main */
 .main {
-    width: 686px;
-    background: url(../img/bodybg.gif) 0 0 no-repeat;
-    position: relative;
-    margin: 0 auto;
-    padding: 22px 0 0 92px;
+  margin: 0 auto;
+  padding: 22px 0 0 92px;
+  width: 686px;
+
+  background: url(../img/bodybg.gif) 0 0 no-repeat;
+
+  position: relative;
 }
 
-.main_nav {
-    width: 114px;
-    float: left;
+
+/* 4. Main - Aside */
+.aside {
+  width: 114px;
+
+  float: left;
 }
 
-.main_nav h2 {
-    width: 114px;
-    height: 34px;
-    background: #fff;
-    color: #5F7A77;
-    font-size: 18px;
-    line-height: 34px;
+.aside h2 {
+  width: 114px;
+  height: 34px;
+
+  background: #fff;
+  color: #5F7A77;
+  font-size: 18px;
+  line-height: 34px;
 }
 
-.main_nav ul {
-    width: 114px;
+.aside ul {
+  width: 114px;
 }
 
-.main_nav ul li {
-    width: 114px;
-    height: 24px;
+.aside ul li {
+  width: 114px;
+  height: 24px;
 }
 
-.main_nav ul li a {
-    width: 102px;
-    height: 24px;
-    display: block;
-    background: url(../img/bullet2-normal.gif) 0 10px no-repeat #fff;
-    color: #5F7A77;
-    line-height: 24px;
-    padding: 0 0 0 12px;
+.aside ul li a {
+  display: block;
+  padding: 0 0 0 12px;
+  width: 102px;
+  height: 24px;
+
+  background: url(../img/bullet2-normal.gif) 0 10px no-repeat #fff;
+  color: #5F7A77;
+  line-height: 24px;
 }
 
-.main_nav ul li a:hover {
-    background: url(../img/bullet2-hover.gif) 0 10px no-repeat #fff;
-    color: #5F7A77;
+.aside ul li a:hover {
+  background: url(../img/bullet2-hover.gif) 0 10px no-repeat #fff;
+  color: #5F7A77;
 }
 
-.main_content {
-    width: 511px;
-    float: left;
-    border-left: 1px solid #C8E8E2;
-    margin: 28px 0 0;
-    padding: 0 30px;
+
+/* 5. Main - Content */
+.content {
+  margin: 28px 0 0;
+  padding: 0 30px;
+  width: 511px;
+
+  float: left;
+  border-left: 1px solid #C8E8E2;
 }
 
-.main_content p {
-    padding: 0 0 10px 0;
+.content p {
+  padding: 0 0 10px 0;
 }
 
-.main_content p.more {
-    width: 502px;
-    height: 25px;
-    float: left;
-    background: url(../img/sky-color-bg.gif) 0 10px repeat-x;
-    padding: 0 0 20px 0;
+.content p.more {
+  padding: 0 0 20px 0;
+  width: 502px;
+  height: 25px;
+
+  float: left;
+  background: url(../img/sky-color-bg.gif) 0 10px repeat-x;
 }
 
-.main_content p.more a {
-    width: 92px;
-    height: 21px;
-    display: block;
-    background: url(../img/special.gif) 0 0 no-repeat #fff;
-    color: #958201;
-    line-height: 21px;
-    text-transform: uppercase;
-    margin: 0 0 0 328px;
-    padding: 4px 0 0 50px;
+.content p.more a {
+  display: block;
+  margin: 0 0 0 328px;
+  padding: 4px 0 0 50px;
+  width: 92px;
+  height: 21px;
+
+  background: url(../img/special.gif) 0 0 no-repeat #fff;
+  color: #958201;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
-.main_content p.more a:hover {
-    background: url(../img/buy.gif) 0 0 no-repeat #fff;
-    color: #645804;
+.content p.more a:hover {
+  background: url(../img/buy.gif) 0 0 no-repeat #fff;
+  color: #645804;
 }
 
-.main_content img {
-    float: left;
-    margin-right: 15px;
+.content img {
+  margin-right: 15px;
+  float: left;
 }
 
-/* Footer*/
 
+/* 6. Footer*/
 .footer {
+  margin: 0 auto;
+  padding: 36px 0 0;
+  height: 103px;
 
-    height: 103px;
-    background: url(../img/footerbg.gif) 0 0 repeat-x #D3F0F0;
-    color: #2F5958;
-    font: 13px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
-    position: relative;
-    margin: 0 auto;
-    clear: both;
-    padding: 36px 0 0;
+  background: url(../img/footerbg.gif) 0 0 repeat-x #D3F0F0;
+  color: #2F5958;
+  font: 13px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  clear: both;
+
+  position: relative;
 }
 
-.footer .pan{
-    width: 778px;
-    position: relative;
-    margin: 0 auto;
+.footer__pan{
+  margin: 0 auto;
+  width: 778px;
+
+  position: relative;
 }
 
 .footer ul {
-    width: 608px;
-    height: 20px;
-    position: relative;
-    margin: 0 auto;
+  margin: 0 auto;
+  width: 608px;
+  height: 20px;
+
+  position: relative;
 }
 
 .footer li {
-    float: left;
+  float: left;
 }
 
 .footer ul li a {
-    padding: 0 10px 0;
-    color: #2F5958;
-    background: #EBF8F7;
-    font-size: 13px;
+  padding: 0 10px 0;
+
+  color: #2F5958;
+  background: #EBF8F7;
+  font-size: 13px;
 }
 
 .footer ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /*Copyright*/
-.footer .copyright {
-    width: 350px;
-    margin: 10px 0 0 92px;
+.footer__copyright {
+  margin: 10px 0 0 92px;
+  width: 350px;
 }
 
-.footer .copyright a {
-    color: #2F5958;
-    font-size: 13px;
+.footer__copyright a {
+  color: #2F5958;
+  font-size: 13px;
 }
 
-.footer .copyright a:hover {
-    text-decoration: underline;
+.footer__copyright a:hover {
+  text-decoration: underline;
 }
-/*Copyright end*/
