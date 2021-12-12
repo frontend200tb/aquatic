@@ -43,7 +43,7 @@ a { text-decoration: none; }
 .header__top img { /*картинка с логотипом Aquatic в заголовке*/
   width: 136px;
   height: 31px;
-
+  border: 0;
   position: absolute; /*позиционируем*/
   top: 12px;          /*от верха страницы*/
   left: 235px;        /*от левого края страницы*/
