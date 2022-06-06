@@ -3,112 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="aquatic, Иван Каширин, Ivan Kashirin, верстка сайта, учебный проект">
-  <meta name="description" content="Иван Каширин верстка сайта учебный проект Aquatic, ITVDN Александр Петрик Видео курс HTML CSS 2015">
   <meta name="author" content="Иван Каширин">
   <meta name="copyright" content="200TB Web Studio">
+  <meta name="description" content="Учебная верстка сайта Aquatic, ITVDN Александр Петрик Видео курс HTML CSS 2015">
+  <meta name="keywords" content="aquatic, frontend200tb, Иван Каширин, Ivan Kashirin, верстка, frontend, HTML, CSS">
 
   <title>Иван Каширин Aquatic</title>
 
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.svg">
 </head>
 <body>
 
 
-<!-- Header -->
+<!-- PAGE -->
+<div class="page">
 
-<header class="header">
-  <div class="header__top">
-    <a href="index.html">
-      <img src="img/logo.gif" alt="Aquatic" width="136" height="31" title="Aquatic">
-    </a>
-    <p>Aquarium fishes and plants</p>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <div class="header">
+      <a class="header__link" href="index.html">
+        <img class="header__logo" src="assets/img/header-top-logo.gif" alt="Aquatic" width="136" height="31" title="Aquatic">
+      </a>
+      <h1 class="header__h1">Aquarium fishes and plants</h1>
+    </div>
   </div>
-
-  <div class="header__nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Fishes</a></li>
-      <li><a href="#">Plants</a></li>
-      <li class="border_none"><a href="#">About us</a></li>
-    </ul>
- </div>
 </header>
+<!-- /HEADER -->
 
 
-<!-- Main -->
-
-<main class="main">
-
-  <aside class="aside">
-    <h2>Fishes</h2>
-    <ul>
-      <li><a href="#">Coral Moon</a></li>
-      <li><a href="#">Red Oranda</a></li>
-      <li><a href="#">Hifin Moon</a></li>
-      <li><a href="#">Zebra Danio</a></li>
-      <li><a href="#">Yellow Tang</a></li>
-      <li><a href="#">Royal Gramma</a></li>
-      <li><a href="#">Butterflyfish</a></li>
-    </ul>
-
-    <h2>Plants</h2>
-    <ul>
-      <li><a href="#">Cabomba</a></li>
-      <li><a href="#">Wisteria</a></li>
-      <li><a href="#">Red Myrio</a></li>
-      <li><a href="#">Anacharis</a></li>
-      <li><a href="#">Water Sprite</a></li>
-      <li><a href="#">Hornwort</a></li>
-    </ul>
-  </aside>
-
-  <section class="content">
-    <p class="more">
-      <a href="#">live fish</a>
-    </p>
-
-    <p class="justify">
-      <img src="img/fish.jpg" alt="LiveFish" title="Live Fish"> Freshwater fish and freshwater plants are available in an amazing variety of shapes and sizes. Fish are imported from all over the world, as well as bred and raised domestically in the United States. We offer one of the widest varieties of freshwater fish online in the US, if not the widest variety. Our dedicated fish room staff has many years of experience in fish husbandry, and every aquarium in our fish room receives expert care daily. Order some of our live fish or plants today and we'll ship them to your door.
-    </p>
-
-    <p class="more"><a href="#">live plants</a></p>
-
-    <p class="justify">
-      <img src="img/plant.jpg" alt="LivePlants" title="LiveP lants"> Oxygenating pond plants are true aquatic plants which will grow completely submerged in the water. These plants are also well suited to the home aquarium, and are very versatile. Anacharis and other oxygenating plants will not hold up well over extreme cold winters, 
-      but they will survive with partial die back in zones which don't get completely frozen. These plants help maintain a high level of oxygen in ponds and they also help compete against algae for nutrients which helps to choke the algae out.
-    </p>
-
-    <p class="more">
-      <a href="#">aquarium</a>
-    </p>
-
-    <p class="justify">
-      <img src="img/aquarium.jpg" alt="Aquarium" title="Aquarium"> An aquarium (plural aquariums or aquaria) is a vivarium consisting of at least one transparent side in which water-dwelling plants or animals are kept. Fishkeepers use aquaria to keep fish, invertebrates, amphibians, marine mammals, turtles, and aquatic plants. The term combines the Latin root aqua, meaning water, with the suffix -arium, meaning "a place for relating to". An aquarist owns fish or maintains an aquarium, typically constructed of glass or high-strength acrylic plastic. Cuboid aquaria are also known as fish tanks or simply tanks, while bowl-shaped aquaria are also known as fish bowls. Size can range from a small glass bowl to immense public aquaria. Specialized equipment maintains appropriate water quality and other characteristics suitable for the aquarium's residents.
-    </p>
-  </section>
-</main>
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__li">
+          <a href="#" class="nav__link">Fishes</a>
+        </li>
+        <li class="nav__li">
+          <a href="#" class="nav__link">Plants</a>
+        </li>
+        <li class="nav__li border_none">
+          <a href="#" class="nav__link">About us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAV -->
 
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer__pan">
-    <ul>
-      <li><a href="index.html">Home</a>| </li>
-      <li><a href="#">Fishes</a>| </li>
-      <li><a href="#">Plants</a>| </li>
-      <li><a href="#">About us</a></li>
-    </ul>
+<!-- CONTENT -->
+<section>
+  <div class="container">
+    <div class="content">
 
-    <div class="footer__copyright">
-      <a href="https://frontend200tb.github.io/aquatic/" title="Проект aquatic на GitHub">© 2021 Иван Каширин - Верстка учебного проекта Aquatic</a>
-      <a href="mailto:frontend200tb@mail.ru" title="Написать Ивану Каширину">frontend200tb@mail.ru</a>
-      <a href="https://github.com/frontend200tb" title="Иван Каширин на GitHub">github</a>
-      <br>
-      <a href="https://frontend200tb.github.io/start/" title="Иван Каширин Frontend разработчик">Иван Каширин - Frontend разработчик</a>
+
+      <!-- ASIDE -->
+      <aside class="aside">
+        <h2 class="aside__h2">Fishes</h2>
+        <ul class="aside__ul">
+          <li class="aside__li"><a href="#" class="aside__link">Coral Moon</a></li>
+          <li class="aside__li"><a href="#" class="aside__link">Red Oranda</a></li>
+          <li class="aside__li"><a href="#" class="aside__link">Hifin Moon</a></li>
+          <li class="aside__li"><a href="#" class="aside__link">Zebra Danio</a></li>
+          <li class="aside__li"><a href="#" class="aside__link">Yellow Tang</a></li>
+          <li class="aside__li"><a href="#" class="aside__link">Royal Gramma</a></li>
+          <li class="aside__li"><a href="#" class="aside__link">Butterflyfish</a></li>
+        </ul>
+
+        <h2 class="aside__h2">Plants</h2>
+        <ul class="aside__ul">
+          <li class="aside__li"><a href="#" class="aside__link">Cabomba</a></li>
+          <li class="aside__li"><a href="#" class="aside__link">Wisteria</a></li>
+          <li class="aside__li"><a href="#" class="aside__link">Red Myrio</a></li>
+          <li class="aside__li"><a href="#" class="aside__link">Anacharis</a></li>
+          <li class="aside__li"><a href="#" class="aside__link">Water Sprite</a></li>
+          <li class="aside__li"><a href="#" class="aside__link">Hornwort</a></li>
+        </ul>
+      </aside>
+      <!-- /ASIDE -->
+
+        
+      <!-- MAIN -->
+      <main class="main">
+
+        <article>
+          <div class="more">
+            <a href="#" class="more__link">live fish</a>
+          </div>
+
+          <div class="justify">
+            <img src="assets/img/main-fish.jpg" alt="LiveFish" title="Live Fish" class="main__img"> Freshwater fish and freshwater plants are available in an amazing variety of shapes and sizes. Fish are imported from all over the world, as well as bred and raised domestically in the United States. We offer one of the widest varieties of freshwater fish online in the US, if not the widest variety. Our dedicated fish room staff has many years of experience in fish husbandry, and every aquarium in our fish room receives expert care daily. Order some of our live fish or plants today and we'll ship them to your door.
+          </div>
+        </article>
+
+        <article>
+          <div class="more">
+            <a href="#" class="more__link">live plants</a>
+          </div>
+
+          <div class="justify">
+            <img src="assets/img/main-plant.jpg" alt="LivePlants" title="LiveP lants" class="main__img"> Oxygenating pond plants are true aquatic plants which will grow completely submerged in the water. These plants are also well suited to the home aquarium, and are very versatile. Anacharis and other oxygenating plants will not hold up well over extreme cold winters, 
+            but they will survive with partial die back in zones which don't get completely frozen. These plants help maintain a high level of oxygen in ponds and they also help compete against algae for nutrients which helps to choke the algae out.
+          </div>
+        </article>
+
+        <article>
+          <div class="more">
+            <a href="#" class="more__link">aquarium</a>
+          </div>
+
+          <div class="justify">
+            <img src="assets/img/main-aquarium.jpg" alt="Aquarium" title="Aquarium" class="main__img"> An aquarium (plural aquariums or aquaria) is a vivarium consisting of at least one transparent side in which water-dwelling plants or animals are kept. Fishkeepers use aquaria to keep fish, invertebrates, amphibians, marine mammals, turtles, and aquatic plants. The term combines the Latin root aqua, meaning water, with the suffix -arium, meaning "a place for relating to". An aquarist owns fish or maintains an aquarium, typically constructed of glass or high-strength acrylic plastic. Cuboid aquaria are also known as fish tanks or simply tanks, while bowl-shaped aquaria are also known as fish bowls. Size can range from a small glass bowl to immense public aquaria. Specialized equipment maintains appropriate water quality and other characteristics suitable for the aquarium's residents.
+          </div>
+        </article>
+
+      </main>
+      <!-- /MAIN -->
+
+
+    </div>
+  </div>
+</section>
+<!-- /SECTION -->
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer">
+      <ul class="footer__ul">
+        <li class="footer__li"><a href="index.html" class="footer__link">Home</a>| </li>
+        <li class="footer__li"><a href="#" class="footer__link">Fishes</a>| </li>
+        <li class="footer__li"><a href="#" class="footer__link">Plants</a>| </li>
+        <li class="footer__li"><a href="#" class="footer__link">About us</a></li>
+      </ul>
+
+      <div class="footer__copyright">
+        <a href="https://github.com/frontend200tb" title="Проект aquatic на GitHub">Иван Каширин © 2021 frontend200tb</a>
+      </div>
     </div>
   </div>
 </footer>
+<!-- /FOOTER -->
+
+
+</div>
+<!-- /PAGE -->
 
 
 </body>

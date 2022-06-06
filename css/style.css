@@ -1,133 +1,156 @@
 /*
 1. Global
 2. Header
-3. Main
-4. Main - Aside
-5. Main - Content
+3. Nav
+4. Aside
+5. Main
 6. Footer
 */
 
-
-/* 1. Global */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.page {
   color: #5F7A77;
-  font: 13px/19px Arial, Helvetica, sans-serif; /* font-size/line-height */
-  background-image: url(../img/main-bg.gif);
-  background-repeat: repeat-x;
   background-color: #fff;
+  background-image: url(../assets/img/main-bg.gif);
+  background-repeat: repeat-x;
 }
 
-ul { list-style-type: none; }
-a { text-decoration: none; }
-.justify { text-align: justify; }
-
-
-/* 2. Header */
-.header__top {
+.container {
   margin: 0 auto;
   width: 778px;
-  height: 65px;
-
-  background-image: url(../img/topbg.jpg);
-  background-repeat: no-repeat;
-  color: #828282;
-
-  position: relative;
 }
 
-.header__top img { /*картинка с логотипом Aquatic в заголовке*/
+
+/* 1. Global */
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/**************
+HEADER
+**************/
+.header {
+  padding-top: 12px;
+  padding-left: 235px;
+  width: 778px;
+  height: 65px;
+  color: #828282;
+
+  background-image: url(../assets/img/header-top-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.header__link {
+  display: block;
   width: 136px;
   height: 31px;
-  border: 0;
-  position: absolute; /*позиционируем*/
-  top: 12px;          /*от верха страницы*/
-  left: 235px;        /*от левого края страницы*/
 }
 
-.header__top p { /*параграф с текстом в загаловке*/
+.header__logo { /*картинка с логотипом Aquatic в заголовке*/
+  width: 136px;
+  height: 31px;
+}
+
+.header__h1 { /*параграф с текстом в загаловке*/
   width: 200px;
-
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 19px;
   color: #828282;
-
-  position: absolute; /*позиционируем*/
-  top: 43px;          /*от верха страницы*/
-  left: 235px;        /*от левого края страницы*/
 }
+/**************
+end HEADER
+**************/
 
-.header__nav {
-  margin: 0 auto;
+
+/**************
+NAV
+**************/
+.nav {
   padding: 11px 0 0 92px;
-  width: 686px;
-  height: 153px;
+  height: 164px;
 
-  background: url(../img/header.jpg) 0 0 no-repeat;
-
-  position: relative;
+  background-image: url(../assets/img/nav.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
-.header__nav ul {
+.nav__ul {
   width: 87px;
 }
 
-.header__nav ul li {
+.nav__li {
   width: 87px;
   height: 22px;
 
   border-bottom: 1px dashed #AECCCA;
 }
 
-.header__nav ul li a {
-  display: block;
+.nav__link {
   padding: 0 0 0 15px;
   width: 72px;
   height: 22px;
-
-  background: url(../img/bullet-normal.gif) 0 7px no-repeat #fff;
-  color: #305E5C;
   line-height: 22px;
+  color: #305E5C;
+  background-color: #fff;
+  background-image: url(../assets/img/nav-bullet-normal.gif);
+  background-position: 0 2px;
+  background-repeat: no-repeat;
 }
 
-.header__nav ul li a:hover {
-  padding: 0 0 0 15px;
-
-  background: url(../img/bullet-hover.gif) 0 7px no-repeat #fff;
-  color: #305E5C;
-  line-height: 22px;
+.nav__link:hover {
+  background-image: url(../assets/img/nav-bullet-hover.gif);
 }
 
-.header__nav ul li.border_none {
-  width: 87px;
-  height: 22px;
-
+.nav__li:last-child {
   border-bottom: none;
 }
+/**************
+end NAV
+**************/
 
 
-/* 3. Main */
-.main {
-  margin: 0 auto;
+/**************
+CONTENT
+**************/
+.content {
+  display: flex;
+  flex-direction: row;
   padding: 22px 0 0 92px;
-  width: 686px;
 
-  background: url(../img/bodybg.gif) 0 0 no-repeat;
-
-  position: relative;
+  background-image: url(../assets/img/content-body-bg.gif);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
+/**************
+end CONTENT
+**************/
 
 
-/* 4. Main - Aside */
+/**************
+ASIDE
+**************/
 .aside {
   width: 114px;
-
-  float: left;
 }
 
-.aside h2 {
+.aside__h2 {
   width: 114px;
   height: 34px;
 
@@ -137,121 +160,128 @@ a { text-decoration: none; }
   line-height: 34px;
 }
 
-.aside ul {
+.aside__ul {
   width: 114px;
 }
 
-.aside ul li {
+.aside__li {
   width: 114px;
   height: 24px;
 }
 
-.aside ul li a {
+.aside__link {
   display: block;
   padding: 0 0 0 12px;
   width: 102px;
   height: 24px;
-
-  background: url(../img/bullet2-normal.gif) 0 10px no-repeat #fff;
-  color: #5F7A77;
   line-height: 24px;
-}
-
-.aside ul li a:hover {
-  background: url(../img/bullet2-hover.gif) 0 10px no-repeat #fff;
   color: #5F7A77;
+
+  background-image: url(../assets/img/aside-bullet-normal.gif);
+  background-position: 0 10px;
+  background-repeat: no-repeat;
+  background-color: #fff;
 }
 
+.aside__link:hover {
+  background-image: url(../assets/img/aside-bullet-hover.gif);
+}
+/**************
+end ASIDE
+**************/
 
-/* 5. Main - Content */
-.content {
+
+/**************
+MAIN
+**************/
+.main {
   margin: 28px 0 0;
   padding: 0 30px;
-  width: 511px;
+  width: 571px;
 
-  float: left;
   border-left: 1px solid #C8E8E2;
 }
 
-.content p {
-  padding: 0 0 10px 0;
-}
-
-.content p.more {
+.more {
   padding: 0 0 20px 0;
   width: 502px;
   height: 25px;
 
-  float: left;
-  background: url(../img/sky-color-bg.gif) 0 10px repeat-x;
+  background-image: url(../assets/img/main-sky-color-bg.gif);
+  background-position: 0 10px;
+  background-repeat: repeat-x;
 }
 
-.content p.more a {
+.more__link {
   display: block;
   margin: 0 0 0 328px;
   padding: 4px 0 0 50px;
-  width: 92px;
+  width: 142px;
   height: 21px;
-
-  background: url(../img/special.gif) 0 0 no-repeat #fff;
-  color: #958201;
+  color: #c2aa0d;
   line-height: 21px;
   text-transform: uppercase;
+
+  background-image: url(../assets/img/main-special.gif);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: #fff
 }
 
-.content p.more a:hover {
-  background: url(../img/buy.gif) 0 0 no-repeat #fff;
-  color: #645804;
+.more__link:hover {
+  color: #5c5209;
+  background-image: url(../assets/img/main-buy.gif);
 }
 
-.content img {
+.justify {
+  margin: 20px 0 10px 0;
+  text-align: justify;
+}
+
+.main__img {
   margin-right: 15px;
   float: left;
 }
+/**************
+end MAIN
+**************/
 
 
-/* 6. Footer*/
+/**************
+FOOTER
+**************/
+footer {
+  height: 143px;
+  background: url(../assets/img/footer-bg.gif) 0 0 repeat-x #D3F0F0;
+}
+
 .footer {
-  margin: 0 auto;
   padding: 36px 0 0;
-  height: 103px;
-
-  background: url(../img/footerbg.gif) 0 0 repeat-x #D3F0F0;
-  color: #2F5958;
   font: 13px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
-  clear: both;
-
-  position: relative;
+  color: #2F5958;
 }
 
-.footer__pan{
-  margin: 0 auto;
-  width: 778px;
 
-  position: relative;
-}
-
-.footer ul {
+.footer__ul {
   margin: 0 auto;
   width: 608px;
   height: 20px;
 
-  position: relative;
+  /* position: relative; */
 }
 
-.footer li {
-  float: left;
+.footer__li {
+  display: inline-block;
 }
 
-.footer ul li a {
+.footer__link {
   padding: 0 10px 0;
-
   color: #2F5958;
   background: #EBF8F7;
   font-size: 13px;
 }
 
-.footer ul li a:hover {
+.footer__link:hover {
   text-decoration: underline;
 }
 
@@ -259,6 +289,7 @@ a { text-decoration: none; }
 .footer__copyright {
   margin: 10px 0 0 92px;
   width: 350px;
+  height: 20px;
 }
 
 .footer__copyright a {
@@ -269,3 +300,6 @@ a { text-decoration: none; }
 .footer__copyright a:hover {
   text-decoration: underline;
 }
+/**************
+end FOOTER
+**************/
